@@ -1,6 +1,42 @@
 /* Stylesheet by Rosemary P. Wardley, 2018 */
 
 h1 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+text-transform: uppercase;
+margin: 1px;
+text-shadow: -1px 0 #fff8ef, 0 1px #fff8ef, 1px 0 #fff8ef, 0 -1px #fff8ef;
+}
+
+h2 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+text-transform: uppercase;
+margin: 1px;
+text-shadow: -1px 0 #fff8ef, 0 1px #fff8ef, 1px 0 #fff8ef, 0 -1px #fff8ef;
+}
+
+h3, h4, h5, h6, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin:auto;
+}
+
+p {
+    font: 13px/1.5 'Open Sans', sans-serif;
+    margin-left:5px;
+	}
+
+html,body, {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+h1 {
 font-family: 'Montserrat', sans-serif;
 margin: 1px;
 text-shadow: -1px 0 #fff8ef, 0 1px #fff8ef, 1px 0 #fff8ef, 0 -1px #fff8ef;
@@ -24,6 +60,7 @@ html,body, {
     padding:0;
     font-family: 'Rubik', sans-serif;
 }
+*/
 
 #title {
     height: 4em;

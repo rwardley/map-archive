@@ -8,6 +8,7 @@
 
 		<!--put your external stylesheet links here-->
         <script src="https://use.fontawesome.com/8ada6bb8b1.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 <!--		<link rel="stylesheet" href="lib/leaflet/leaflet.css">-->
         <!--put your Bootstrap stylesheet links below this comment and above style.css-->
 <!--		<link rel="stylesheet" href="css/bootstrap.min.css">-->
@@ -21,7 +22,7 @@
         <!-- Header -->    
           <div id ="title">
               <img src="assets/ng_2flush_blackyellow_cmyk.png" style="height: 100%" alt="ng logo" />
-              <div id="header" style="height: 100%"><h1> | Map Archive</h1></div>
+              <div id="header" style="height: 100%"><h1> | Map Archive</h1> </div>
              
               <input type="button" onclick="startEdits()" value="Map" style="align:right">
               <input type="button" onclick="startEdits()" value="List">
@@ -36,9 +37,9 @@
                       <div id="filterYears">
                     <div id="yearLeft">
                     <form>
-                      <p>Filter by Decade:
+                     <h4>Filter by Decade:</h4>
                           <br/>
-                          <!--don'tforget to update IDs/-->
+                         <p> <!--don'tforget to update IDs/-->
                         <input type="checkbox" id="1880" name ="year" value="1880"> 1880s<br>
                         <input type="checkbox" id="1890" name ="year" value="1890"> 1890s<br>
                         <input type="checkbox" id="1900" name ="year" value="1900"> 1900s<br>
@@ -52,7 +53,7 @@
                      </div> 
                      <div id="yearRight">
                     <form>
-                      <p>
+                      <p
                           <br/>
                         <input type="checkbox" id="1950" name="year" value="1950"> 1950s<br>
                         <input type="checkbox" id="1960" name="year" value="1960"> 1960s<br>
@@ -66,7 +67,7 @@
                     </div>
                   <div id="filterWords">
                       <form>
-                        <p>Filter by Region:
+                        <h4>Filter by Region:
                             <br/>
                         <select id="filter">
                             <option value="">Africa</option>
@@ -74,8 +75,8 @@
                             <option value="">World</option>
                             <option value="">can this autopop?</option>
                         </select>
-                        </p>
-                        <p>Filter by Country:
+                        </h4>
+                        <h4>Filter by Country:
                             <br/>
                         <select id="filter">
                             <option value="">Auto ordered in Alpha?</option>
@@ -83,31 +84,31 @@
                             <option value="">Belize</option>
                             <option value="how can this be same?">United States</option>
                         </select>
-                        </p>
-                        <p>Filter by Locality:
+                        </h4>
+                        <h4>Filter by Locality:
                             <br/>
                         <select id="filter">
                             <option value="">South Island</option>
                             <option value="">Cairo</option>
                             <option value="">Thera</option>
                         </select>
-                        </p>
-                        <p>Filter by Theme:
+                        </h4>
+                        <h4>Filter by Theme:
                             <br/>
                         <select id="filter">
                             <option value="">General Reference</option>
                             <option value="">Topographic ap</option>
                             <option value="">Locator</option>
                         </select>
-                        </p>
-                        <p>Filter by Scale:
+                        </h4>
+                        <h4>Filter by Scale:
                             <br/>
                         <select id="filter">
                             <option value="">Large</option>
                             <option value="">Medium</option>
                             <option value="">Small</option>
                         </select>
-                        </p>
+                        </h4>
                     </form>
                     </div>
                   </div>
