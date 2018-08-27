@@ -1,0 +1,142 @@
+/* Stylesheet by Rosemary P. Wardley, 2018 */
+
+h1 {
+font-family: 'Montserrat', sans-serif;
+margin: 1px;
+text-shadow: -1px 0 #fff8ef, 0 1px #fff8ef, 1px 0 #fff8ef, 0 -1px #fff8ef;
+}
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: inherit;
+    margin:auto;
+}
+
+p {
+    font: 13px/1.5 "Rubik", sans-serif;
+    margin-left:5px;
+	}
+
+html,body, {
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#title {
+    height: 4em;
+    border-bottom: 2px solid lightgray;
+    justify-content: center;
+}
+
+#header {
+    display: inline-block;
+    justify-content: center;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#left {
+    width: 60%;
+    display: inline-block;
+}
+
+#right {
+    width: 39%;
+    height: 40em;
+    display: inline-block;
+    background: #efeff1;
+    border: 2px solid lightgray;
+    margin:auto;
+}
+
+#leftResults {
+    width: 40%;
+    height: 40em;
+    border: 2px solid lightgray;
+    display: inline-block;
+}
+
+#rightResults {
+    width: 59%;
+    height: 40em;
+    display: inline-block;
+    background: #efeff1;
+    border: 2px solid lightgray;
+    margin:auto;
+}
+
+#filterArea {
+/*    background: yellow;*/
+    height: 23em;
+    border: 2px solid lightgray;
+}
+
+#fTop{
+    height:70%;
+    width:100%;
+}
+#fBottom{
+    height: 29%;
+    width:100%;
+}
+
+#map {
+    background: #efeff1;
+    height: 23em;
+    border: 2px solid lightgray;
+/*    display: inline-block;*/
+}
+
+#filterYears {
+    width:49%;
+    height:99%;
+    background: #efeff1;
+    display: inline-block;
+}
+
+#yearLeft{
+    width:50%;
+    height:99%;
+    display: inline-block;
+}
+#yearRight{
+    width:48%;
+    height:99%;
+    display: inline-block;
+}
+
+#filterWords {
+    width:49%;
+    height:99%;
+    background: #efeff1;
+    display: inline-block;
+}
+
+#submitArea {
+    margin: 1em;
+    width:99%;
+    height:99%;
+    display: inline-block;
+}
+
+#filter {
+    margin-left:5px;
+}
+
+#results {
+    line-height: 1.25;
+    margin-left: 5px;
+    column-count: 2;
+    column-gap: 0px;
+/*    width:250px;*/
+    height:auto;
+}
+
+#metadata {
+    margin: 2px;
+}

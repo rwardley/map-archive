@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="maps, cartography"/>
+		<title>National Geographic Map Archives</title>
+
+		<!--put your external stylesheet links here-->
+        <script src="https://use.fontawesome.com/8ada6bb8b1.js"></script>
+<!--		<link rel="stylesheet" href="lib/leaflet/leaflet.css">-->
+        <!--put your Bootstrap stylesheet links below this comment and above style.css-->
+<!--		<link rel="stylesheet" href="css/bootstrap.min.css">-->
+<!--		<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+<!--        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  jQuery UI CSS -->
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body style="background-color:#fff;">
+    
+        <!-- Header -->    
+          <div id ="title">
+              <img src="assets/ng_2flush_blackyellow_cmyk.png" style="height: 100%" alt="ng logo" />
+              <div id="header" style="height: 100%"><h1> | Map Archive</h1></div>
+             
+              <input type="button" onclick="startEdits()" value="Map" style="align:right">
+              <input type="button" onclick="startEdits()" value="List">
+              <input type="button" onclick="startEdits()" value="About">
+          </div>
+        
+        <!-- Section -->
+            <div id ="wrapper">
+              <div id= "left">
+                <div id="filterArea">
+                  <div id ="fTop">
+                      <div id="filterYears">
+                    <div id="yearLeft">
+                    <form>
+                      <p>Filter by Decade:
+                          <br/>
+                          <!--don'tforget to update IDs/-->
+                        <input type="checkbox" id="1880" name ="year" value="1880"> 1880s<br>
+                        <input type="checkbox" id="1890" name ="year" value="1890"> 1890s<br>
+                        <input type="checkbox" id="1900" name ="year" value="1900"> 1900s<br>
+                        <input type="checkbox" id="1910" name ="year" value="1910"> 1910s<br> 
+                        <input type="checkbox" id="1920" name ="year" value="1920"> 1920s<br>
+                        <input type="checkbox" id="1930" name ="year" value="1930"> 1930s<br>
+                        <input type="checkbox" id="1940" name ="year" value="1940"> 1940s<br>
+                      </p>
+                        <br/>
+                     </form> 
+                     </div> 
+                     <div id="yearRight">
+                    <form>
+                      <p>
+                          <br/>
+                        <input type="checkbox" id="1950" name="year" value="1950"> 1950s<br>
+                        <input type="checkbox" id="1960" name="year" value="1960"> 1960s<br>
+                        <input type="checkbox" id="1970" name="year" value="1970"> 1970s<br>
+                        <input type="checkbox" id="1980" name="year" value="1980"> 1980s<br>
+                        <input type="checkbox" id="1990" name="year" value="1990"> 1990s<br>
+                        <input type="checkbox" id="2000" name="year" value="2000"> 2000s<br>
+                        <input type="checkbox" id="2010" name="year" value="2010"> 2010s<br>
+                     </form>
+                     </div>
+                    </div>
+                  <div id="filterWords">
+                      <form>
+                        <p>Filter by Region:
+                            <br/>
+                        <select id="filter">
+                            <option value="">Africa</option>
+                            <option value="">Europe</option>
+                            <option value="">World</option>
+                            <option value="">can this autopop?</option>
+                        </select>
+                        </p>
+                        <p>Filter by Country:
+                            <br/>
+                        <select id="filter">
+                            <option value="">Auto ordered in Alpha?</option>
+                            <option value="">New Zealand</option>
+                            <option value="">Belize</option>
+                            <option value="how can this be same?">United States</option>
+                        </select>
+                        </p>
+                        <p>Filter by Locality:
+                            <br/>
+                        <select id="filter">
+                            <option value="">South Island</option>
+                            <option value="">Cairo</option>
+                            <option value="">Thera</option>
+                        </select>
+                        </p>
+                        <p>Filter by Theme:
+                            <br/>
+                        <select id="filter">
+                            <option value="">General Reference</option>
+                            <option value="">Topographic ap</option>
+                            <option value="">Locator</option>
+                        </select>
+                        </p>
+                        <p>Filter by Scale:
+                            <br/>
+                        <select id="filter">
+                            <option value="">Large</option>
+                            <option value="">Medium</option>
+                            <option value="">Small</option>
+                        </select>
+                        </p>
+                    </form>
+                    </div>
+                  </div>
+                  <div id="fBottom">
+                    <div id="submitArea">
+                        <div>
+                        <button type="submit" id="submitBtn">Submit form</button>
+                      </div>  
+                        <p id="demo"></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div id= "map">
+                    <img src="assets/world.png" style="width:80%" alt="ng logo"/>
+                </div>
+              </div>
+
+              <div id= "right">
+                  <h2>Results:</h2>
+                  <div id= "results">
+                    <img src="assets/02010_Salzkammergut_August_1960_thumb.png" style="width:80%" alt="ng logo"/>
+                    <img src="assets/02126_Los Angeles - Colossus of the West_October_1962_thumb.png" style="width:80%" alt="ng logo"/>
+                    <img src="assets/02399_Middle Rhine_April_1967_thumb.png" style="width:80%" alt="ng logo"/>
+                    <img src="assets/02480_Islands of Paris_May_1968_thumb.png" style="width:80%" alt="ng logo"/>
+                    <a href="results.html">
+				        <img src="assets/02715_South Island, New Zealand_January_1972_thumb.png" style="width:80%" alt="ng logo"/>
+				    </a>  
+                    <img src="assets/02502_Rhode Island_September_1968_thumb.png" style="width:80%" alt="ng logo"/>
+                </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+              </div>
+             </div>
+
+		<!--you can also use this space for internal scripts or stylesheets;
+		place these within <script> or <style> tags-->
+
+		<!--put your external script links here-->
+		<script type="text/javascript" src="lib/jquery-3.1.1.min.js"></script>
+<!--        <script type="text/javascript" src="lib/bootstrap.min.js"></script>-->
+        <!--Always load your .JS file last-->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
