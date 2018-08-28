@@ -1,8 +1,7 @@
 /* Rosemary Wardley: Geog 778-Map Archive JS*/
 
 document.getElementById("submitBtn").addEventListener("click", function(){
-    
-    $('.results1').prepend('<a href="results.html"> <img id="theImg" src="assets/02715_South Island, New Zealand_January_1972_thumb.png"></a>' )
+  
     
    decades.forEach(function(item, index, array){
        var yearCheckbox = document.querySelector('input[value="' + item + '"]');
@@ -25,11 +24,6 @@ console.log(queryDecadeParam)
         }
     });
     
-
-
-//make the ajax query call for everything that ends up in the queryArray +9
-//how do i pass the years that I want into the app.js dynamically
-//where do the results pop up and how do I get them to pull up the images
       
 });
 var queryArray = [];

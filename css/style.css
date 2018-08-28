@@ -98,7 +98,7 @@ html,body, {
     height: 40em;
     vertical-align: top;
     display: inline-block;
-    background: #efeff1;
+/*    background: #efeff1;*/
     border: 2px solid lightgray;
     margin:auto;
 }
@@ -114,13 +114,12 @@ html,body, {
     width: 59%;
     height: 40em;
     display: inline-block;
-    background: #efeff1;
+/*    background: #efeff1;*/
     border: 2px solid lightgray;
     margin:auto;
 }
 
 #filterArea {
-/*    background: yellow;*/
     height: 23em;
     border: 2px solid lightgray;
 }
@@ -135,7 +134,7 @@ html,body, {
 }
 
 #map {
-    background: #efeff1;
+/*    background: #efeff1;*/
     height: 23em;
     border: 2px solid lightgray;
 /*    display: inline-block;*/
@@ -144,7 +143,7 @@ html,body, {
 #filterYears {
     width:49%;
     height:99%;
-    background: #efeff1;
+/*    background: #efeff1;*/
     display: inline-block;
 }
 
@@ -162,7 +161,7 @@ html,body, {
 #filterWords {
     width:49%;
     height:99%;
-    background: #efeff1;
+/*    background: #efeff1;*/
     display: inline-block;
 }
 
