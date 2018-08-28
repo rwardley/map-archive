@@ -34,7 +34,8 @@ app.all('*',function(req,res,next)
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
 router.get('/', function(req, res) {
     console.log(req.query.decade)
-      var mapQuery = format('SELECT * from map_table WHERE issue_year = %L', req.query.decade[0])
+      var mapQuery = format('SELECT * from map_table WHERE issue_year >= %L', req.query.decade)
+      console.log(mapQuery)
   myClient.query(mapQuery, function (err, result) {
     if (err) {
       console.log(err)
